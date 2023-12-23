@@ -1,0 +1,2 @@
+(()=>{"use strict";(function(){let e=document.getElementById("container");const n=document.createElement("div");n.id="header",n.innerHTML="header works",e.appendChild(n)})(),function(){let e=document.getElementById("container");const n=document.createElement("div");n.id="main",n.innerHTML="main works",e.appendChild(n)}(),function(){let e=document.getElementById("container");const n=document.createElement("div");n.id="footer",n.innerHTML="footer works",e.appendChild(n)}()})();
+//# sourceMappingURL=index.bundle.js.map
