@@ -2,7 +2,6 @@ const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 
-
 module.exports = merge(common, {
     devtool: 'inline-source-map',
     watch: true,
@@ -13,6 +12,21 @@ module.exports = merge(common, {
         port: 8080,
         open: true,
     },
+    module: {
+
+        rules: [
+    
+          {
+    
+            test: /\.css$/i,
+    
+            use: ['style-loader', 'css-loader'],
+    
+          },
+    
+        ],
+    
+      },
     optimization: {
         runtimeChunk: 'single',
     },

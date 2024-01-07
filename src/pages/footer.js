@@ -4,9 +4,13 @@ const footerCont = function(){
 
     const footer = document.createElement("div");
     footer.id = "footer";
-    footer.innerHTML = "footer works";
     contentCont.appendChild(footer);
 
+    const containerfooter = document.createElement("div");
+    containerfooter.id = "containerfooter";
+    footer.appendChild(containerfooter);
+    containerfooter.textContent = "Porject for the TOP"
+    //add image
     return footer;
 
 }

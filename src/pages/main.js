@@ -4,7 +4,6 @@ const mainCont = function(){
 
     const main = document.createElement("div");
     main.id = "main";
-    main.innerHTML = "main works";
     contentCont.appendChild(main);
 
     return main;
