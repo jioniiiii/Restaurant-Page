@@ -8,8 +8,8 @@ const footerCont = function(){
 
     const containerfooter = document.createElement("div");
     containerfooter.id = "containerfooter";
+    containerfooter.textContent = "Porject for the TOP";
     footer.appendChild(containerfooter);
-    containerfooter.textContent = "Porject for the TOP"
     //add image
     return footer;
 
