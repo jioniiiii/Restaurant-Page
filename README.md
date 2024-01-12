@@ -1,3 +1,4 @@
 # Restaurant-Page
-    -ADD menu and contact pages (fix asctive class)
-    -style it better 
+    -ADD contect in contact page
+    -ADD smooth animation transition between pages
+    -ADD styles  
