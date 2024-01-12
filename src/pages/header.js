@@ -1,6 +1,6 @@
 import myImage from "/src/img/logo.png";
 
-const headerCont = function(){
+const headerCont = function(activeButton = 'Home'){
 
     let contentCont = document.getElementById("container");
 
@@ -21,11 +21,13 @@ const headerCont = function(){
     nav.id = "nav";
     const btnTexts = ["Home", "Menu", "Contact"];
 
-    btnTexts.forEach((text, index) => {
+    btnTexts.forEach((text) => {
         const button = document.createElement("button");
-        button.id = "navButton" + index;
         button.classList.add("navButton");
         button.textContent = text;
+        if (text.toLowerCase() === activeButton.toLowerCase()) {
+            button.classList.add('active');
+        }
         nav.appendChild(button);
     });
 

@@ -42,7 +42,6 @@ html, body {
 }
 
 .navButton{
-    /* Your existing styles */
     border: none;
     background: none;
     cursor: pointer;
@@ -67,6 +66,7 @@ html, body {
 
 .navButton.active::after{
     width: 100%;
+    background: #139407;
 }
 
 .navButton:hover::after{
@@ -101,7 +101,7 @@ html, body {
     border-radius: 7.5px;
 }
 
-#title,p,button{
+#title,p,h2,button{
     color: white;
 }
 
@@ -130,4 +130,61 @@ html, body {
     display: flex;
     justify-content: center;
     color: white;
+}
+
+/*##############*/
+/*#### Menu ####*/
+/*##############*/
+
+#menu{
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerMenu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    height: 75%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid black;
+    border-radius: 7.5px;
+}
+
+#item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem 0rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid black;
+    border-radius: 7.5px;
+}
+
+/*##############*/
+/*## Contact  ##*/
+/*##############*/
+
+#contact{
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerContact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    height: 75%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid black;
+    border-radius: 7.5px;
 }
